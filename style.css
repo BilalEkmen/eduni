@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ion-tab-bar, ion-tab-button{
+    background-color: #ce0013;
+}
+
+ion-icon{
+    color: #d7d8da;
+}
+
+html, body{ height: 100%;}
+
+.form-container{ background-color: #fafafa; height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
+.form-container .content{ padding: 0 10px; height: 100%; width: 100%; display: flex; align-items: center; justify-content: center;}
+.form-container .content > div{ height: fit-content; display: flex; gap: 50px; align-items: center; justify-content: center;}
+.form-container .content > div .img-area{}
+.form-container .content > div .img-area .img{ height: 477px;}
+.form-container .content > div .img-area .img img{ height: 100%;}
+.form-container .content > div .form-area{}
+.form-container .content > div .form-area > .box{ width: 350px; background-color: white; border: 1px solid #dbdbdb;}
+.form-container .content > div .form-area > .qr{ display: flex; align-items: center; flex-direction: column; padding: 20px 0;}
+.form-container .content > div .form-area > .qr .logo{ height: 30px; margin-bottom: 15px;}
+.form-container .content > div .form-area > .qr .logo > img{ height: 100%;}
+.form-container .content > div .form-area > .qr .qr-code{ width: 200px; height: 200px;}
+.form-container .content > div .form-area > .qr .qr-code img{  width: 100%; height: 100%;}
+.form-container .content > div .form-area > .qr > p{ width: 100%; max-width: 290px; margin-top: 15px; font-size: 13px; color: #999; text-align: center; }
+.form-container .content > div .form-area > .qr .social{ margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 15px;}
+.form-container .content > div .form-area > .qr .social > a{ text-decoration: none; display: inline-block; width: 60px; position: relative; display: flex; align-items: center; justify-content: center; flex-direction: column; text-decoration: none;}
+.form-container .content > div .form-area > .qr .social > a.instagram{ color: #cf0c8b;}
+.form-container .content > div .form-area > .qr .social > a.twitter{ color: #2582c4;}
+.form-container .content > div .form-area > .qr .social > a i{ transition: all .2s ease;}
+.form-container .content > div .form-area > .qr .social > a span{ transition: all .2s ease; opacity: 0; position: absolute; font-size: 13px; font-weight: 600;}
+.form-container .content > div .form-area > .qr .social > a:hover i{ transform: translateY(-7px);}
+.form-container .content > div .form-area > .qr .social > a:hover span{ transform: translateY(10px); opacity: 1;}
+.form-container .content > div .form-area > .or{ margin: 15px 0; position: relative; width: 100%; text-align: center; font-size: 13px; font-weight: 600;}
+.form-container .content > div .form-area > .or::before{ content: ''; display: inline-block; width: 100%; height: .1px; background-color: #999; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.form-container .content > div .form-area > .or span{ background-color: white; color: #999; position: relative; z-index: 1; padding: 0 10px;}
+.form-container .content > div .form-area .stores{ padding: 20px 0; display: flex; align-items: center; justify-content: center; gap: 15px;}
+.form-container .content > div .form-area .stores > a{ cursor: pointer; display: inline-block; height: 35px;}
+.form-container .content > div .form-area .stores > a > img{ height: 100%;}
+.form-container footer{ box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1); width: 100%; display: flex; align-items: center; justify-content: center; height: 40px; color: #999; font-size: 13px;}
+.form-container footer a{ font-weight: 600; text-decoration: none; margin: 0 3px; color: #989898;}
+.form-container footer a:hover{ text-decoration: underline;}
+
+
+
+@media screen and (max-width: 770px) {
+    .form-container .content > div .img-area{ display: none;}
+}
+
+
+
+
